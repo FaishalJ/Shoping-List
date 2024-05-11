@@ -1,0 +1,54 @@
+@use "../abstract" as a;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  
+  @media screen and (max-width: 56.25em) {
+    font-size: 56.25%;
+  }
+}
+
+body {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 1.6rem;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(212,173,190,1) 0%, rgba(254,213,231,1) 100%);
+  color: var(--clr-grey-dark-1);
+  @include a.flex-d;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  width: 80%;
+  max-width: 90rem;
+  min-height: 80vh;
+  text-align: center;
+  background-color: var(--clr-grey-light-2);
+  border-radius: .7rem;
+  box-shadow: 0px 0px 2rem 0px rgba(176, 176, 178, 0.90);
+
+  @media screen and (max-width: 62.5em) {
+    width: 100%;
+    max-width: 100rem;
+    min-height: 100vh;
+  }
+}
+
+main {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}

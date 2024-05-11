@@ -1,0 +1,49 @@
+.shoping {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  select, button, input {
+    padding: 1rem 3.2rem;
+    border-radius: 10rem;
+    border: none;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.10);
+    color:var(--clr-grey-dark-1);
+    font-size: 1.6rem;
+    cursor: pointer;
+  }
+  
+  select {
+    font-family: inherit;
+    background: #fff;
+
+    option:hover {
+      background-color: var(--clr-main-light-1);
+      color: #fff;     
+    }
+  }
+
+  button {
+    background: var(--clr-main-light-2);
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &:hover {
+      box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.20);
+    }
+  }
+
+  
+
+  input {
+    width: 40%;
+    font-family: inherit;
+    background: #fff;
+    &::placeholder {
+      color: inherit;
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+  }
+}
