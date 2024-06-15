@@ -1,5 +1,12 @@
 ## Shopping list App
 
-A simple shoping list web app buit with react and sass.
-You can add, sort, delete ✅ and ❌ all your list items.
+### My React SHoping List
+A simple shoping list app buit with react and sass.
+
+### Features
+-Add items
+-Sort
+-Filter and
+-delete ❌ all your list items.
+
 Have fun making your list.
